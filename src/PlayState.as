@@ -24,6 +24,8 @@ package {
 		private var sprBullet:Bullet;
 		private var sprHero:Hero;
 		
+		private var score:FlxText;
+		
 		public function PlayState():void {
 			super();
 			
@@ -46,6 +48,10 @@ package {
 			
 			sprHero = new Hero(20, 250);
 			add(sprHero);
+			
+			FlxG.score = 0;
+			score = new FlxText(TILE_WIDTH, TILE_HEIGHT, FlxG.width, "0");
+			add(score);
 			
 			mapBoundaries = new FlxTilemap();
 			mapBoundaries.loadMap(new array_mapBoundaries, imgBoundariesTiles, TILE_WIDTH, TILE_HEIGHT, FlxTilemap.OFF);
@@ -113,6 +119,9 @@ package {
 			
 			emitter = createEmitter();
 			emitter.at(enemy);
+			
+			FlxG.score++;
+			score.text = FlxG.score.toString();
 		}
 		
 		private function overlapEnemiesHero(enemy:Enemy, hero:Hero):void {

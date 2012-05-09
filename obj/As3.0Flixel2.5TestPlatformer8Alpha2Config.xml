@@ -16,16 +16,16 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'12/20/2011'</value>
+      <value>'5/9/2012'</value>
     </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-      <path-element>\\VBOXSVR\experiment\30. As3.0 Flixel2.5 Test Platformer 8 Alpha 2\src</path-element>
+      <path-element>C:\Documents and Settings\Mikael Pratama\Desktop\Flixel-Simple-Platformer\src</path-element>
       <path-element>C:\Program Files\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
   </compiler>
   <file-specs>
-    <path-element>\\VBOXSVR\experiment\30. As3.0 Flixel2.5 Test Platformer 8 Alpha 2\src\Main.as</path-element>
+    <path-element>C:\Documents and Settings\Mikael Pratama\Desktop\Flixel-Simple-Platformer\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#ECE9D8</default-background-color>
   <default-frame-rate>60</default-frame-rate>
